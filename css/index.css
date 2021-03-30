@@ -14,12 +14,17 @@ body    {
     display: grid;
     width: 100vw;
 }
-.img-figure {
+main    {
     width: 100vw;
+ background-color: black;
+}
+.img-figure {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    background-color: black;
+    align-content: center;
+   
 }
 .img-oficial    {
     max-width: 100%;
@@ -34,7 +39,7 @@ body    {
     color: white;
 }
 .nav    {
-    background-color: rgb(51, 51, 51);
+    background-color:rgb(27, 26, 26);
     height: 50px;
     position: sticky;
 }
@@ -57,10 +62,11 @@ body    {
     color: black;
 }
 @media(max-width:600px)    {
+
     .img-oficial    {
-        width: 100%;
+        width: 100vw;
     }
     .title-h1   {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 }
