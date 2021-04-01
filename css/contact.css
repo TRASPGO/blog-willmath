@@ -86,11 +86,29 @@ h2  {
     font-family: var(--font-family-navegador);
     padding: 10px;
 }
+.grid-contain-number   {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
+}
 .numero-telefonico  {
     display: flex;
-    width: 100vw;
     flex-direction: column;
     align-items: center;
+    margin-top: 1rem;
+
+}
+.telegram-div   {
+    position: relative;
+    z-index: 0;
+    width: 550px;
+    transform: translate(50px,-0px);
+
+}
+.whatsapp-div   {
+    position: relative;
+    z-index: 1;
+    transform: translate(-50px,-220px);
+    width: 400px;
 }
 .tel-wts    {
     display: flex;
@@ -100,18 +118,51 @@ h2  {
     width: 100%;
 }
 .telegram , .whatsapp   {
-    font-size: 7rem;
+    font-size: 12rem;
 }
+
 .telegram   {
     color: rgb(15, 136, 250);
 }
 .whatsapp   {
-    color: rgb(16, 224, 16);
+    color: rgb(16, 180, 16);
 }
 .tel-p  {
     font-size: 3rem;
     font-family: var(--font-family-standar);
     font-style: oblique;
+}
+.messenger  {
+    transform: translateY(-200px);
+}
+.messenger-p    {
+    padding: 0 10px;
+    font-size: 1.7rem;
+    font-family: var(--font-family-navegador);
+    font-weight: bolder;
+}
+.fb-messenger   {
+    font-size: 12rem;
+    text-align: center;
+    margin-top: 2rem;
+    color: rgb(140, 9, 196);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.link-fb    {
+ font-size: 2rem;
+ font-weight: bolder;
+ color: black;
+ font-family: var(--font-family-navegador);   
+}
+.link-fb:focus{
+    color: rgb(102, 6, 161);
+}
+.link-fb:hover  {
+    color: rgb(102, 6, 161);
 }
 .footer {
     display: grid;
