@@ -18,6 +18,16 @@ body    {
     width: 100vw;
     overflow-x: hidden;
     background-image: url("../img/library.jpg");
+    background-size: 180%;
+    animation: animacion 10s infinite  linear alternate;
+}
+@keyframes animacion {
+    from    {
+        background-position: bottom;
+    }
+    to  {
+        background-position: top;
+    }
 }
 .opacity-library-presentation   {
     background-color: rgba(0, 0, 0, 0.589);
