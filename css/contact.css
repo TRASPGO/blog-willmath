@@ -16,7 +16,8 @@ p   {
 body    {
     display: grid;
     width: 100vw;
-    overflow-x: hidden
+    overflow-x: hidden;
+    background-color: #1b1a1a;
 }
 header  {
     display: flex;
@@ -87,11 +88,14 @@ h2  {
     margin-top: 2rem;
     font-family: var(--font-family-navegador);
     padding: 10px;
+    color: white;
 }
 .grid-contain-number   {
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
     margin-top: 1rem;
+    background-color: rgb(243, 243, 243);
+    height: 600px;
 }
 .numero-telefonico  {
     display: flex;
@@ -104,13 +108,13 @@ h2  {
     position: relative;
     z-index: 0;
     width: 550px;
-    transform: translate(50px,-0px);
+    transform: translate(50px,20px);
 
 }
 .whatsapp-div   {
     position: relative;
     z-index: 1;
-    transform: translate(-50px,-220px);
+    transform: translate(-50px,-160px);
     width: 400px;
 }
 .tel-wts    {
@@ -134,21 +138,24 @@ h2  {
     font-size: 3rem;
     font-family: var(--font-family-standar);
     font-style: oblique;
+    color: rgb(0, 0, 0);
 }
 .messenger  {
     margin-top: -150px;
+    background-color: #1b1a1a;
 }
 .messenger-p    {
     padding: 0 10px;
     font-size: 1.7rem;
     font-family: var(--font-family-navegador);
     font-weight: bolder;
+    color: rgb(255, 255, 255);
 }
 .fb-messenger   {
     font-size: 12rem;
     text-align: center;
     margin-top: 2rem;
-    color: rgb(140, 9, 196);
+    color: rgb(179, 0, 255);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -158,14 +165,14 @@ h2  {
 .link-fb    {
  font-size: 2rem;
  font-weight: bolder;
- color: black;
+ color: rgb(255, 255, 255);
  font-family: var(--font-family-navegador);   
 }
 .link-fb:focus{
-    color: rgb(102, 6, 161);
+    color: rgb(157, 0, 255);
 }
 .link-fb:hover  {
-    color: rgb(102, 6, 161);
+    color: rgb(157, 0, 255);
 }
 .footer {
     display: grid;
@@ -370,14 +377,14 @@ h1  {
         z-index: 0;
         width: 350px;
         min-width: 200px;
-        transform: translate(50px,30px);
+        transform: translate(15px,30px);
     
     }
     .whatsapp-div   {
         position: relative;
         z-index: 1;
-        transform: translate(40px,-90px);
-        width: 250px;
+        transform: translate(5px,-90px);
+        width: 220px;
         min-width: 100px;
     }
     .messenger  {
@@ -385,6 +392,9 @@ h1  {
         transform: translateY(-50px);
     }
     .link-fb    {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
+    }
+    .fb-messenger{
+        font-size: 8rem;
     }
 }

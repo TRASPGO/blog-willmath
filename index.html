@@ -5,38 +5,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts ROBOTO -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <!-- no se que es esto XD -->
     <link href="https://unpkg.com/ed-grid@3.0.0/src/css/ed-grid.min.css" rel="stylesheet">
     <meta name="robot" content="index">
     <!-- title -->
-    <title>Document</title>
+        <title>Document</title>
     <!-- style in css -->
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <!-- font-awesome -->
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
+ 
 </head>
 <body>
-    <main class="main">
-        <figure class="img-figure">
-            <img class="img-oficial" src="img/log-wm.png" alt="">
-            <figcaption class="img-oficial">
-                <h1 class="title-h1">Will-Math Academy</h1>
+    <div class="opacity-library-presentation">
+        <figure>
+            <img src="img/log-wm.png" alt="">
+            <figcaption class="name-academy">
+                <h1>Will-Math Academy</h1>
             </figcaption>
         </figure>
-    </main>
-    <nav class="nav">
-        <ul class="nav-ul">
-            <li class="ul-li">
-                <a href="index.html">Inicio</a>
+    </div>
+    <div class="nav-fixed"id="bars">
+        <i class="fas fa-bars" ></i>
+    </div>
+    <nav class="nav"id="nav-fixed-script">
+        <i class="fas fa-times" id="cross"></i>
+        <ul class="nav-ul-script">
+            <li class="ul-li-script">
+                <a href="index.html" class="link-a">
+                    Inicio 
+                </a>
             </li>
-            <li class="ul-li">
-                <a href="biblioteca.html">Biblioteca Virtual</a>
+            <li class="ul-li-script">
+                <a href="biblioteca.html" class="link-a">
+                    Biblioteca
+                </a>
             </li>
-            <li class="ul-li">
-                <a href="contact.html">Cont&aacute;ctanos</a>
+            <li class="ul-li-script">
+                <a href="contact.html" class="link-a">
+                    Contactos
+                </a>
             </li>
         </ul>
     </nav>
-    <!-- Load Facebook SDK for JavaScript -->
-    <div id="fb-root"></div>
-    <script src="js/redirect.js"></script>
+    <main>
+        <div class="about">
+            <h2>¿Qu&eacute; es Will-Math Academy? </h2>
+            <p class="para-about">
+                Somos una academia 
+            </p>
+        <div class="icon-about">
+            <i class="far fa-address-card"></i>
+        </div>
+        </div>
+    </main>
+    <script src="js/barindex.js"></script>
 </body>
 </html>
