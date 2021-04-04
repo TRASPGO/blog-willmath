@@ -24,6 +24,10 @@ header  {
     width: 100vw;
     background-color: rgb(27, 26, 26);
     top: 0;
+    transition: all .3s linear;
+}
+header:hover    {
+    background-color: black;
 }
 .header-dos {
     display: none;
@@ -99,104 +103,97 @@ h2  {
     grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
     grid-gap: 20px;
     padding: 0 20px; */
-.area-de-cursos {
-    height: 350px;
+
+/* ANCHOR - GRID CONTAINER IN MAIN */
+
+.container-cards    {
+    display: block;
     width: 90%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
-    grid-gap: 20px;
-    overflow-y: auto;
-    margin: 15px auto;
-    padding: 0 30px;
-    background-color: rgba(255, 255, 255, 0.13);
+    margin: 0 auto;
+    height: 350px;
+    background-color: #3d3d3d;
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
 }
-.para-area  {
-    font-size: 1.5rem;
-    text-align: center;
+.title-container    {
+    display: block;
+    width: 90%;
+    margin: 2.5rem auto;
     color: white;
-    padding: 10px 0;
-    background-color: rgb(17, 123, 245);
-    margin-top: 15px;
-    font-weight: bolder;
-    font-family: var(--font-family-oficial);
-}
-.wm-span    {
-    font-weight: bolder;
-    font-family: var(--font-family-navegador);
-    grid-row: 6/7;    
-}
-/* formato de una carta en la pagina */
-
-.card {
-    transition: all .3s linear;
-    background-color: rgb(255, 247, 247);
-    margin-top: 10px;
-    margin-bottom   : 20px;
-}
-.presentation-card  {
-    width: 100%;
-    box-sizing: border-box;
-    background-color: rgb(18, 18, 172);
-    color: rgb(255, 255, 255);
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(2,50%);
-    grid-template-rows: repeat(2,50%);
-}
-.curso  {
-    padding-top: 10px;
     text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    background-color: #117bf5;
+    padding: 5px 0;
     font-weight: bolder;
+    font-family: var(--font-family-oficial
+    );
+}
+.card   {
+    margin: 15px;
+    height: 300px;
+    width: 300px;   
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background-color: rgba(76, 0, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: blur(5px);
+}
+.para-wm    {
+    width: 100%;
+    color: white;
+    padding: 2px 0;
     font-family: var(--font-family-navegador);
-    font-size: 3rem;
-    grid-column: 1/3;
+    font-weight: bolder;
+    text-align: center;
+    font-stretch: extra-expanded;
+    margin-top: .7rem;
 }
-.title-description{ 
-    font-size: 1.6rem;
-    padding-left: 5px;
+.para-number, .para-curso,.para-descripcion {
+    color: white;
 }
-.para-description{  
-    padding: 2px;
-    font-family: "Goudy Old Style";
-    font-weight: bold;
-    font-size: 1.4rem;
-}
-.btn-description    {
-    float: right;
-    transform: translateX(-30px);
-    background-color: #ffffff00;
-    color: rgb(0, 29, 110);
-    box-shadow: none;
-    border: none;
-    cursor: pointer;
-    font-size: 1.2rem;
-}
-.fa-chevron-right   {
-    padding-top: 5px;
-    padding-left: 5px;
 
+.para-number    {
+    font-weight: bolder;
+    font-size: 1.8rem;
+    margin-bottom: .5rem;
+    font-family: var(--font-family-navegador);
 }
-.btn-description:hover .fa-chevron-right {
-    animation: chevron-rigth .8s linear infinite 
+.btn-press  {
+    background-color: transparent;
+    border-radius: 20px;
+    border: none;
+    margin-top: 1rem;
+    padding: 5px 10px;
+    box-shadow: none;
+    cursor: pointer;
+    background-color: white;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    font-family: var(--font-family-standar);
 }
-/* animations */
-@keyframes  chevron-rigth   {
-    0%      {
-        transform: translateX(0);
-    }
-    50%     {
-        transform: translate(15px);
-    }
-    100%    {
-        transform: translate(0);
-    }
-}
+/* ---------------------- SECTION - FOOTER --------------------- */
+
 .footer {
     display: grid;
     grid-template-columns:  repeat(3,minmax(100px,1fr));
     grid-template-rows: 100%;
     padding: 10px 5px;
     background-color: black;
+    margin-top: 2rem;
 }
 .img-wm-blanco  {
     width: 120px;
@@ -275,6 +272,8 @@ header  {
 .header-dos {
     display: block;
     width: 100vw;
+    color: white;
+    background-color: #0c0c0c;
 }
 .figure-contain {
     display: flex;
@@ -282,7 +281,7 @@ header  {
     justify-content: center;
     align-content: center;
     align-items: center;
-    background-color: black;
+    background-color: #0c0c0c;
     height: 200px;
     width: 100vw;
 }
@@ -374,11 +373,11 @@ body::-webkit-scrollbar-thumb {
 	background: #ff9d00;
 	border-radius: 5px;
 }
-.area-de-cursos::-webkit-scrollbar {
+.container-cards::-webkit-scrollbar {
 	width: 8px;
 }
 
-.area-de-cursos::-webkit-scrollbar-thumb {
+.container-cards::-webkit-scrollbar-thumb {
 	background: #ff9d00;
 	border-radius: 50px;
 }
